@@ -66,7 +66,7 @@ En este laboratorio se continuó con el desarrollo de la aplicación de e-commer
 
 ### Evidencia
 
-![alt text](docs/evidencia4.png)
+![alt text](docs/Captura%20de%20pantalla%202026-07-01%20174234.png)
 
 ---
 
@@ -81,47 +81,8 @@ En este laboratorio se continuó con el desarrollo de la aplicación de e-commer
 
 ### Evidencia
 
-![alt text](docs/evidencia5.png)
+![alt text](docs/Captura%20de%20pantalla%202026-07-01%20174325.png)
 
-![alt text](docs/evidencia6.png)
+![alt text](docs/Captura%20de%20pantalla%202026-07-01%20174325.png)
 
-![alt text](docs/evidencia7.png)
-
----
-
-## 6. Agregar Pasarela de Pagos de Película Comprada (Simulación)
-
-### Actividades Realizadas
-
-- Implementación del flujo de compra.
-- Desarrollo de una pasarela de pago simulada.
-- Confirmación del pago exitoso.
-- Visualización del resultado de la compra.
-
-### Evidencia
-
-![alt text](docs/evidencia8.png)
-
----
-
-## 7. Agregar Tests al Proyecto
-
-### Actividades Realizadas
-
-- Configuración del entorno de pruebas.
-- Desarrollo de pruebas para componentes y funcionalidades principales.
-- Ejecución satisfactoria de los tests.
-
-### Evidencia
-
-![alt text](docs/evidencia9.png)
-
----
-
-## 8. Despliegue en Netlify
-
-### Evidencia
-
-![alt text](docs/evidencia10.png)
-
-- Link de la página: https://TU-LINK-NETLIFY.netlify.app/
+![alt text](docs/Captura%20de%20pantalla%202026-07-01%20174711.png)

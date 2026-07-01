@@ -5,37 +5,25 @@ import MoviesList from "@/components/movies/movies-list";
 import MoviesPageHeader from "@/components/movies/movies-page-header";
 import MoviesSearch from "@/components/movies/movies-search";
 
-import tmdbService from "@/services/tmdb.service";
-import type { Movie } from "@/types/movie";
+import { useMovieStore } from "@/store/movie.store";
 
 const MoviesPage = () => {
-  const [movies, setMovies] = useState<Movie[]>([]);
+  const { movies, loading, fetchPopularMovies } = useMovieStore();
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("all");
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const loadMovies = async () => {
-      try {
-        const data = await tmdbService.getPopular();
-        setMovies(data);
-      } catch (error) {
-        console.error("Error obteniendo películas", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadMovies();
-  }, []);
+    fetchPopularMovies();
+  }, [fetchPopularMovies]);
 
   const genres = useMemo(() => {
-    // TMDB devuelve genre_ids, así que por ahora no tendremos filtro real.
+    // Más adelante obtendremos los géneros desde TMDB.
     return [];
   }, []);
 
   const filteredMovies = useMemo(() => {
-    const normalizedSearch = searchTerm.toLowerCase().trim();
+    const normalizedSearch = searchTerm.trim().toLowerCase();
 
     return movies.filter((movie) =>
       movie.title.toLowerCase().includes(normalizedSearch)
